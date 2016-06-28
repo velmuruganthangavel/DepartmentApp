@@ -1,0 +1,12 @@
+---
+applications:
+- name: sic-comparison-service-qp
+  host: sic-comparison-service-qp
+  memory: 512M
+  instances: 1
+  path: build/libs/Pro-MyProDeskSicComparisonService.jar
+  services:
+  - pr4
+  - splunk
+env:
+ SPRING_PROFILES_ACTIVE: cloud
